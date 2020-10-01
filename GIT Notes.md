@@ -484,7 +484,7 @@ go to terminal
  
  so you can add or download it 
   
-# How do i create remote a branch in terminal
+# remote stuff 
 
 git remote shows
    
@@ -494,6 +494,234 @@ will show you the remote origin
  
     cat .git/config
     
+# remote stuff 
+
+ remove remote 
+   	
+   		git remote rm "name"
+ 
+
+
+shows the  
+ 	
+ 	git branch 
+ 	
+ 
+local master to remote
+	
+	git push -u origin
+	
+ shows are remote branches
+ 
+	git branch -r
+
+ shows all branches
+  	
+  	git branch -a
+
+# How do i create remote a branch in terminal
+
+	git clone "url" name
+	
+
+#remote branch tracking 
+
+
+ shows whats in the folder to show the branches
+
+	cat .git/config
+
+helps with commands 
+
+	git help branch
+
+this a new branch 
+
+	 git branch non_tracking
+ 
+  this  
+  
+	 git push origin non_tracking 
+
+this will add a branch
+
+u opition is for tracking
+what is tracking 
+
+	git branch -u origin/non_tracking  non_tracking 
+	
+to untrack
+
+	git branch --unset -upstream non_tracking
+	
+
+# Push Changes to Remote
+
+ view changes
+ 	
+ 	git status
+ 
+ commit 
+  
+  	git commit -am "sum message"
+  
+this local
+this is the  the last 5 commits
+in online 
+
+	git log --oneline -5
+
+ to view the remote
+ 	
+								(name)
+		git log --oneline -5 origin/master
+
+can look master and or the  remote branch
+
+view the difference 
+	
+	git diff master..origin/master
+	
+push to the remote
+
+	git push origin master
+	
+or
+	
+	git push
+
+to view the 
+
+	git log -- oneline -5 origin/master
+
+
+# Fecthing changes
+
+which branch do i want fetch
+
+ log to view changes
+	
+		git log --oneline -5 name
+
+check with the remote server if you haven't a in min 
+
+	git fetch origin
+or
+	git fetch
+	
+
+fetch in the morining 
+fetch  before you push 
+fetch before you go offline 
+fetch often
+
+this brings down whats new  fetch just checks 
+nothing changes
+
+# Merge fetch changes
+
+ you can merge  remote branchs but you can not checkout 
+ 
+ 
+ 	
+ 	git log - oneline -5 origin/master
+
+	
+you can get the difference 
+	
+	git  diff origin/master..master
+	
+merge with local
+
+	git fetch
+	
+	git merge origin/master
+	
+git fetch and then git merge
+
+shortcut
+
+	git pull
+
+
+# check out remote branches
+
+shows the branch
+	
+	git branch 
+
+shows other branchs 
+	
+	git branch -r
+	
+makes new branch 
+
+	git branch "non_tracking origin"/"non_tracking"
+		
+
+delete the branch 
+	
+	git branch -d non_tracking 
+
+	git checkout -b "non_tracking origin"/"non tracking"
+	
+you do this because you cann't check out a remote but you can branch to you local and checkout those pulls
+	
+	
+
+# push local changes to remote
+
+pushing when fail the head is behind you fetch and merge
+
+ 	git fetch 	
+ 	git merge
+ 	git	 push 
+ 	
+# Delete a remote
+		
+for feature branches
+when a feature is done
+	
+	git branch
+
+shows all 
+
+	git branch -r
+	
+this deletes a branch 
+the for the git remote not the git  
+
+
+ 	git push origin :non_tracking
+	
+
+ ### second wa
+ 
+ git push origin --delete branch name
+ 
+	 git push origin --delete "non_tracking" pit
+
+
+	
+	
+	
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+ 
+ 
+
+
     
   
  
